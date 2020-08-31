@@ -1,0 +1,58 @@
+Metadata-Version: 1.1
+Name: GDRIVEPY
+Version: 1.5
+Summary: Simplest way for using google drive api
+Home-page: https://github.com/technicalheist/gdrivepy.git
+Author: Technical Heist
+Author-email: contact@technicalheist.com
+License: MIT
+Download-URL: https://github.com/technicalheist/gdrivepy/archive/1.5.tar.gz
+Description: GDRIVEPY : Google Drive Python API is a simplest way to access the google drive api
+        ===================================================================================
+        
+        this setup file simply uses the google drive api and work accordingly
+        ---------------------------------------------------------------------
+        
+        Features
+        --------
+        
+        -  Authentication of users
+        -  Upload Files
+        -  Create Folders
+        -  List Files
+        -  More coming soon
+        
+        How To Use
+        ----------
+        
+        ::
+        
+        
+            from GDRIVEPY import auth,upload,createFolder,listFiles
+            if __name__ == '__main__':
+                service = auth('credential/data.json') #credential Path
+                # List Files 
+                data = listFiles(service)
+                print(data['data'])
+        
+                #upload file
+                data = upload(service, 'test.pdf', './files/sample.pdf', 'application/pdf', 'FOLDER-ID-HERE(optional)') #access, new name, file path , mime type,folder_id (folder id of parent folder leave blank if root folder)
+                print(data)
+                
+                #Create a folder
+                data = createFolder(service, 'folderName' 'FOLDER-ID-HERE(optional)'); # access, new folder name, folder_id (folder id of parent folder leave blank if root folder)
+                print(data)
+        
+        
+Keywords: GOOGLE DRIVE PYTHON,Drive API,Python google drive
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
