@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
   name = 'gdrivepy',         
   packages = ['gdrivepy'],   
-  version = '1.7',       
+  version = '1.8',       
   description = 'Simplest way for using google drive api',  
   long_description = open('README.rst').read(),
   license = 'MIT',

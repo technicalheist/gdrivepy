@@ -7,7 +7,7 @@ Author: Technical Heist
 Author-email: contact@technicalheist.com
 License: MIT
 Download-URL: https://github.com/technicalheist/gdrivepy/archive/1.5.tar.gz
-Description: GDRIVEPY : Google Drive Python API is a simplest way to access the google drive api
+Description: gdrivepy : Google Drive Python API is a simplest way to access the google drive api
         ===================================================================================
         
         this setup file simply uses the google drive api and work accordingly
@@ -28,7 +28,7 @@ Description: GDRIVEPY : Google Drive Python API is a simplest way to access the 
         ::
         
         
-            from GDRIVEPY import auth,upload,createFolder,listFiles
+            from gdrivepy import auth,upload,createFolder,listFiles
             if __name__ == '__main__':
                 service = auth('credential/data.json') #credential Path
                 # List Files 
