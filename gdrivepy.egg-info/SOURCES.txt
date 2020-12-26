@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+gdrivepy/__init__.py
+gdrivepy/functions.py
+gdrivepy.egg-info/PKG-INFO
+gdrivepy.egg-info/SOURCES.txt
+gdrivepy.egg-info/dependency_links.txt
+gdrivepy.egg-info/requires.txt
+gdrivepy.egg-info/top_level.txt

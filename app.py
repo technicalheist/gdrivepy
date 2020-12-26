@@ -1,4 +1,4 @@
-from GDRIVEPY import auth,upload,createFolder,listFiles
+from gdrivepy import auth,upload,createFolder,listFiles
 if __name__ == '__main__':
     service = auth('YOUR-CREDENTIALS.json') # Credential path
     # List Files 

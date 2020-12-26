@@ -1,4 +1,4 @@
-GDRIVEPY : Google Drive Python API is a simplest way to access the google drive api
+gdrivepy : Google Drive Python API is a simplest way to access the google drive api
 ===================================================================================
 
 this setup file simply uses the google drive api and work accordingly
@@ -19,7 +19,7 @@ How To Use
 ::
 
 
-    from GDRIVEPY import auth,upload,createFolder,listFiles
+    from gdrivepy import auth,upload,createFolder,listFiles
     if __name__ == '__main__':
         service = auth('credential/data.json') #credential Path
         # List Files 

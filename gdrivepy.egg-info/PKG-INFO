@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
-Name: GDRIVEPY
-Version: 1.5
+Name: gdrivepy
+Version: 1.7
 Summary: Simplest way for using google drive api
 Home-page: https://github.com/technicalheist/gdrivepy.git
 Author: Technical Heist

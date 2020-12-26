@@ -1,9 +1,9 @@
 from setuptools import setup
 
 setup(
-  name = 'GDRIVEPY',         
-  packages = ['GDRIVEPY'],   
-  version = '1.5',       
+  name = 'gdrivepy',         
+  packages = ['gdrivepy'],   
+  version = '1.7',       
   description = 'Simplest way for using google drive api',  
   long_description = open('README.rst').read(),
   license = 'MIT',
