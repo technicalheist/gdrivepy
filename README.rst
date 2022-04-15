@@ -7,10 +7,11 @@ this setup file simply uses the google drive api and work accordingly
 Features
 --------
 
--  Authentication of users
 -  Upload Files
 -  Create Folders
 -  List Files
+-  Update File Location
+-  Download File (Beta)
 -  More coming soon
 
 How To Use
@@ -19,18 +20,19 @@ How To Use
 ::
 
 
-    from gdrivepy import auth,upload,createFolder,listFiles
+    from gdrivepy import GDriver
+
     if __name__ == '__main__':
-        service = auth('credential/data.json') #credential Path
-        # List Files 
-        data = listFiles(service)
+        driver = GDriver('credentials.json') # Credential path
+
+        # List All Files
+        data = driver.list_files()
         print(data['data'])
 
-        #upload file
-        data = upload(service, 'test.pdf', './files/sample.pdf', 'application/pdf', 'FOLDER-ID-HERE(optional)') #access, new name, file path , mime type,folder_id (folder id of parent folder leave blank if root folder)
-        print(data)
-        
-        #Create a folder
-        data = createFolder(service, 'folderName' 'FOLDER-ID-HERE(optional)'); # access, new folder name, folder_id (folder id of parent folder leave blank if root folder)
+        # Upload file
+        data = driver.upload('test.pdf', './files/sample.pdf', 'application/pdf') # access, new name, file path , mime type
         print(data)
 
+        # Create a folder
+        data = driver.create_folder({'name':'FolderName'}); # access, new folder metadata
+        print(data)
